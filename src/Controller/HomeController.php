@@ -1,5 +1,4 @@
 <?php
-// TEST (a supprimer)
 
 namespace App\Controller;
 
@@ -7,11 +6,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ReactController extends AbstractController
+class HomeController extends AbstractController
 {
-    #[Route('/react', name: 'app_react')]
+    #[Route('/', name: 'app_home')]
     public function index(): Response
     {
-        return $this->render('react/index.html.twig');
+        return $this->render('home/index.html.twig');
     }
 }
